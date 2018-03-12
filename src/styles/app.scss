@@ -1,9 +1,24 @@
-body{
+$white: #efeee9;
+$beige: #eeebdf;
+$green: #16c2aa;
+$text-color: #455a64;
+$grey: #373e42;
+$light-grey: #dfdcd5;
+
+
+@import 'normalize.css';
+@import 'layout/fonts';
+@import 'layout/base';
+@import 'common/menu';
+@import 'common/technologies';
+@import 'common/slider';
+
+body {
     margin: 100px;
     background: #ccc
 }
 
-@import 'normalize.css';
-@import 'common/menu';
-@import 'common/technologies';
-@import 'common/slider';
+h1 {
+    @include roboto('bold');
+    color: $beige;
+}
