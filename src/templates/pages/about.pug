@@ -4,5 +4,27 @@ block variables
     - var title = 'Обо мне'
 
 block content
-    h1 Обо мне
-    include ../common/technologies.pug
+    .wrapper
+        .maincontent
+            section.section.hero
+                .socials
+                    include ../common/_socials
+                .hamburger
+                    a.hamburger__link.hero__menu(href="#")
+                        .hamburger__bars
+                .hero__fon
+                    svg.hero__icon
+                        use(xlink:href="assets/images/icons/sprite.svg#portfolio_header")
+                
+
+            section.about       
+            
+        
+
+            section.map
+            
+
+
+
+
+    

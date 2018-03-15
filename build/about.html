@@ -11,15 +11,37 @@
     <script src="/assets/scripts/bundle.js" defer></script>
   </head>
   <body>
-    <h1>Обо мне</h1>
-    <p>Я умею
-      <ul class="technologies">
-        <li><img src="assets/images/sass.svg"></li>
-        <li><img src="assets/images/pug.svg"></li>
-        <li><img src="assets/images/gulp.svg"></li>
-        <li><img src="assets/images/webpack.svg"></li>
-      </ul>
-    </p>
+    <div class="wrapper">
+      <div class="maincontent">
+        <section class="section hero">
+          <div class="socials">
+            <ul class="socials__list">
+              <li class="socials__item"><a class="socials__link" href="#">
+                  <svg class="socials__link-icon" width="30" height="30">
+                    <use xlink:href="assets/images/icons/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link" href="#">
+                  <svg class="socials__link-icon" width="30" height="30">
+                    <use xlink:href="assets/images/icons/sprite.svg#github"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link" href="#">
+                  <svg class="socials__link-icon" width="30" height="30">
+                    <use xlink:href="assets/images/icons/sprite.svg#in"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+          <div class="hamburger"><a class="hamburger__link hero__menu" href="#">
+              <div class="hamburger__bars"></div></a></div>
+          <div class="hero__fon">
+            <svg class="hero__icon">
+              <use xlink:href="assets/images/icons/sprite.svg#portfolio_header"></use>
+            </svg>
+          </div>
+        </section>
+        <section class="about">      </section>
+        <section class="map"></section>
+      </div>
+    </div>
     <h2>Меню</h2>
     <ul class="menu">
       <li><a href="/index.html">Главная</a></li>

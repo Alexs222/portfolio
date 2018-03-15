@@ -8,17 +8,11 @@ $light-grey: #dfdcd5;
 
 @import 'normalize.css';
 @import 'layout/fonts';
+@import 'layout/mixins';
 @import 'layout/base';
+@import 'pages/about';
 @import 'common/menu';
 @import 'common/technologies';
 @import 'common/slider';
-
-body {
-    margin: 100px;
-    background: #ccc
-}
-
-h1 {
-    @include roboto('bold');
-    color: $beige;
-}
+@import 'common/_socials';
+@import 'common/_humburger';
