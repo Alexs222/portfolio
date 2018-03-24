@@ -15,7 +15,7 @@ block content
                 .hero__fon
                     svg.hero__icon
                         use(xlink:href="assets/images/icons/sprite.svg#portfolio_header")
-                .user
+                .user.hero-user
                      include ../common/_user
                 .arrow-down.hero__scroll-btn
                     a.arrow__link(href="#")
@@ -25,7 +25,6 @@ block content
                     svg.traingle-svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
                         polygon.traingle-svg__left(points='0,0   0,86   500.8,86   500.8,75.5')
                         polygon.traingle-svg__right(points='1000,0   1000,86   500,86   500,75.5')
-
 
             section.section.about
                 .about__left
@@ -44,7 +43,6 @@ block content
                             .cont_text.text-content
                                 p Я начинающий вебразработчик Калининграда. Мне 47 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
                                 p Этот сайт я сделал в рамках обучения в Школе онлайн образования Loftschool. Чуть позже я освежу в нем свой контент. А пока посмотрите, как все классно и красиво! 
-
                 .about__right
                     .about__right-wrap
                         .block__sub-title.title__right чем я могу быть 
@@ -88,7 +86,6 @@ block content
                                                                         circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
                                                                         circle.circle__second.circle-25(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
                                                                     .skill__title #{skill}
-                        
                 
             section.section.map
                 .google-map
@@ -118,7 +115,27 @@ block content
                                         use(xlink:href="assets/images/icons/sprite.svg#map_marker")
                                     span.contacts__text г.Калининград, ул. Пупкина, д. 100
 
-                include ../common/_footer
+                    include ../common/_footer
+
+        .fullscreenmenu
+            #fullscreenmenu.fullscreenmenu-container
+                .fullscreen-header
+                    a.fullscreen__btn(href='#')
+                        img.fullscreen__img(src='assets/images/menu_close.png', alt='Close button')    
+                .fullscreen__wrap
+                    ul.fullscreen__list
+                        li.fullscreen__item
+                            a.fullscreen__link(href="/my-works.html")
+                                .block__sub-title.block__sub-title_fullscreen Мои работы
+                        li.fullscreen__item
+                            a.fullscreen__link(href="/about.html")
+                                .block__sub-title.block__sub-title_fullscreen Обо мне
+                        li.fullscreen__item
+                            a.fullscreen__link(href="/blog.html")
+                                .block__sub-title.block__sub-title_fullscreen Блог
+                        li.fullscreen__item
+                            a.fullscreen__link(href="/index.html")
+                                .block__sub-title.block__sub-title_fullscreen Авторизация
 
             
 

@@ -1,4 +1,7 @@
 // секция Hero
+.wrapper {
+    position: relative;
+}
 
 .hero {
    background: url("./../images/about/mount_jpg.jpg") center center no-repeat;
@@ -172,3 +175,6 @@
     margin: auto;
 }
 
+.map {
+    position: relative;
+}
