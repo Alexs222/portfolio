@@ -28,6 +28,10 @@
     align-items: center;
 }
 
+.footer-menu {
+    display: flex;
+}
+
 .footer-menu__item {
     margin-right: rem(40px);
 }

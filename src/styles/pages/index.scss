@@ -20,6 +20,12 @@
     color: $white;
     width: rem(185px);
     height: rem(43px);
+    &:hover {
+        background: $white;
+        color: $green;
+        @include roboto(bold);
+        transition: 0.5s;
+    }
 }
 
 .main-user {
@@ -28,11 +34,14 @@
     background-color: #fcfcfc;
     opacity: 0.85;
     z-index: 100;
-    border-radius: 5px;
-    padding-top: rem(30px);
+    border-radius: rem(5px);
+    padding-top: rem(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
     & .user__list {
-        margin-bottom: rem(20px);
+        // margin-bottom: rem(20px);
     }
     & .user__name,
     .user__info {
@@ -43,24 +52,77 @@
         margin-bottom: rem(10px);
     }
     & .user__name {
-        margin-bottom: rem(0px);
+        margin-bottom: rem(10px);
     }
 
+    & .socials__list {
+        justify-content: center;
+        & .socials__item {
+            margin: 0 40px 0 0;
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
 
     & .socials__link {
         opacity: .5;
         transition: .3s;
         &:hover {
             opacity: 1;
-    }
-
-
+        }
 
     & .socials__link-icon {
         fill: $green;
+        }
+    }
+
+    & .menu-list {
+        display: flex;
+        text-align: center;
+        line-height: rem(48px);
+        border-radius: 0 0 rem(5px) rem(5px);
+        overflow: hidden;
+
+
+        & .menu__item {
+            background: $green;
+            &:hover {
+                background: #009688;
+                transition: 0.5s;
+            }
+            height: 48px;
+            &:nth-child(1) {
+                width: 42%;
+            }
+            &:nth-child(2) {
+                width: 33%;
+                border-left: 1px solid $white;
+                border-right: 1px solid $white;
+            }
+            &:nth-child(3) {
+                width: 25%;
+            }
+            &:last-child {
+                display: none;
+            }
+        }
+
+            & .menu__link {
+                color: $white;
+                display: block;
+            }
     }
 }
 
-
+.copir {
+    position: absolute;
+    @include roboto(light);
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, 0);
+    // text-align: center;
+    // margin: 0 auto;
+    color: $white;
+    z-index: 102;
 }
-
