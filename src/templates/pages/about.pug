@@ -59,33 +59,52 @@ block content
                                                 when 'Frontend'
                                                     .skills-row__title #{item}
                                                     ul.skills-row__list
-                                                        each skill in ['Html5', 'css3', 'JavaScript & jQuery']
+                                                        - 
+                                                            var skils = [
+                                                                ['Html5', 'circle-80'],
+                                                                ['css3', 'circle-60'],
+                                                                ['JavaScript & jQuery', 'circle-25']
+                                                            ]
+                                                        each item, index in skils
                                                             li.skills-row__item
                                                                 .skill
                                                                     svg.circles(viewbox='0 0 110 110')
                                                                         circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
-                                                                        circle.circle__second.circle-25(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
-                                                                    .skill__title #{skill}
+                                                                        circle.circle__second(class=`${item[1]}`)(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                                                    .skill__title #{item[0]}
                                                 when 'Backend'
                                                     .skills-row__title #{item}        
                                                     ul.skills-row__list
-                                                        each skill in ['PHP', 'mySQL', 'Node.js & npm', 'Mongo.db']
+                                                        - 
+                                                            var skils = [
+                                                                ['PHP', 'circle-30'],
+                                                                ['mySQL', 'circle-20'],
+                                                                ['Node.js & npm', 'circle-45'],
+                                                                ['Mongo.db', 'circle-25']
+                                                            ]
+                                                        each item, index in skils
                                                             li.skills-row__item
                                                                 .skill
                                                                     svg.circles(viewbox='0 0 110 110')
                                                                         circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
-                                                                        circle.circle__second.circle-25(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
-                                                                    .skill__title #{skill}
+                                                                        circle.circle__second(class=`${item[1]}`)(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                                                    .skill__title #{item[0]}
                                                 when 'Workflow'        
                                                     .skills-row__title #{item}        
                                                     ul.skills-row__list
-                                                        each skill in ['Git', 'Gulp', 'Bover']
+                                                        - 
+                                                            var skils = [
+                                                                ['Git', 'circle-70'],
+                                                                ['Gulp', 'circle-60'],
+                                                                ['Bover', 'circle-25']
+                                                            ]
+                                                        each item, index in skils
                                                             li.skills-row__item
                                                                 .skill
                                                                     svg.circles(viewbox='0 0 110 110')
                                                                         circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
-                                                                        circle.circle__second.circle-25(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
-                                                                    .skill__title #{skill}
+                                                                        circle.circle__second(class=`${item[1]}`)(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                                                    .skill__title #{item[0]}
                 
             section.section.map
                 .google-map
@@ -137,9 +156,17 @@ block content
                             a.fullscreen__link(href="/index.html")
                                 .block__sub-title.block__sub-title_fullscreen Авторизация
 
-            
+        
+                                                    //- - 
+                                                    //-     var skils = [
+                                                    //-         ['Html5', '.circle-50'],
+                                                    //-         ['css3', '.circle-40'],
+                                                    //-         ['JavaScript & jQuery', '.circle-25']
+                                                    //-     ]
+                                                        //- each item, index in skils
 
 
+                                                        //- each skill in ['Html5', 'css3', 'JavaScript & jQuery']
 
 
     
