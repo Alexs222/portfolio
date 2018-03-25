@@ -75,6 +75,7 @@
 
 .about {
     display: flex;
+    height: 100%;
 }
 
 // Левая часть
@@ -120,15 +121,19 @@
 
 .about__left__wrap {
     width: 98%; 
+    height: 100%;
 }
 
  .cont__foto {
-        height: 390px;
-        background: url("./../images/about/avatar.jpg");
-        @include cover;
-        overflow: hidden;
-        margin-bottom: rem(18px);
- }
+    margin-bottom: rem(18px);
+}
+
+.about__foto {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
 
 .cont__title {
     text-align: center;
