@@ -1,6 +1,7 @@
 $white: #efeee9;
 $beige: #eeebdf;
 $green: #00bfa5;
+$dark-green: #009688;
 $text-color: #455a64;
 $grey: #373e42;
 $light-grey: #dfdcd5;
@@ -22,3 +23,4 @@ $light-grey: #dfdcd5;
 @import 'common/_contacts';
 @import 'common/_fullscreen_menu';
 @import 'pages/index';
+@import 'common/autorization';

@@ -28,21 +28,24 @@
     }
 }
 
-.main-user {
+.main_user {
     width: rem(380px);
+    // height: 0;
     height: rem(400px);
-    background-color: #fcfcfc;
-    opacity: 0.85;
+    // display: none;
+    background:rgba(252, 252, 252, 0.85);
     z-index: 100;
     border-radius: rem(5px);
     padding-top: rem(20px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    // & .active {
+    //     height: rem(400px);
+    // }
     
-    & .user__list {
-        // margin-bottom: rem(20px);
-    }
+
+    
     & .user__name,
     .user__info {
         color:$text-color;
