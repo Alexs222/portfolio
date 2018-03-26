@@ -189,3 +189,12 @@
     transition: 0.3s;
     border-radius: 0 0 5px 5px;
 }
+
+.flipper {
+    .main_info {
+        transform: translate(-50%, -50%) rotateY(180deg);
+    }
+    .main_order {
+        transform: translate(-50%, -50%) rotateY(0deg);
+    }
+}
