@@ -56,10 +56,6 @@
 }
 
 
-// .order__radio_checkbox {
-//     display: flex;
-//     align-items: center;
-// }
 .order__form-hum {
     margin-bottom: 20px;
 }
@@ -190,11 +186,3 @@
     border-radius: 0 0 5px 5px;
 }
 
-.flipper {
-    .main_info {
-        transform: translate(-50%, -50%) rotateY(180deg);
-    }
-    .main_order {
-        transform: translate(-50%, -50%) rotateY(0deg);
-    }
-}

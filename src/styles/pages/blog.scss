@@ -1,0 +1,147 @@
+
+//header
+
+.blog__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.blog__fon {
+    position: absolute;
+}
+
+.blog__icon {
+    fill: $white;
+    opacity: 0.06;
+    width: 150%;
+    height:300%;
+    transform: translate(-50%, -60%);
+    position: absolute;
+}
+
+.blog__name{
+    color: $white;
+    position: relative;
+}
+
+.traingle-svg__blog {
+    fill: #fff;
+}
+
+// main section
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: rem(40px);
+}
+
+.blog__container {
+     width: 95%;
+     max-width: 1400px;
+     display: flex;
+     margin-bottom: (150px);
+}
+
+.blog__left {
+    width: 35%;
+    min-width: rem(400px);
+    // position: relative;
+    // text-align: right;
+    // margin-right: rem(120px);
+    // display: flex;
+    // justify-content: flex-end;
+}
+
+.blog__title {
+    width: 270px;
+    text-align: right;
+    position: fixed;
+    top: rem(20px);
+    left: rem(70px);
+    // position: absolute;
+    // right: 0;
+    // margin-right: 120px;    
+}
+.blog-title__item {
+    padding: 14px 20px 14px 0;
+    &.active {
+        border-right: 4px solid $green;
+        transition: .3s;
+        color: $green;
+    }
+    // &:hover {
+    //     border-right: 4px solid $green;
+    //     transition: .3s;
+    // }
+}
+
+
+
+.blog__right {
+    width: 65%;
+}
+
+.blog__article {
+    width: 95%;;
+}
+    
+
+.block__sub-title_blog {
+      @include bernier;
+      font-size: rem(35px);
+      color: $text-color;
+  }
+
+
+.blog-article__item{
+    margin-bottom: rem(60px);
+}
+
+
+.blog-article__main {
+    margin-bottom: rem(70px);
+}
+
+.block__sub-title_blog {
+    margin-bottom: rem(20px);
+}
+
+.blog-article__data {
+    margin-bottom: rem(20px);
+    color: $green;
+}
+
+table {
+    width: 100%;
+    background: #f5f2f0;
+    border-collapse: collapse;
+}
+
+tbody td:nth-child(odd) {
+    background-color: #e7e5e3;
+    text-align: right;
+    padding-right: rem(10px);
+
+}
+
+tbody td:nth-child(even) {
+    padding-left: rem(5px);
+}
+
+.str-one {
+    color: #b0b7be;
+}
+
+.str-green {
+    color: #5b9200;
+}
+
+.blog__line {
+    border-bottom: rem(5px) solid #f2f2f4;
+    width: rem(680px);
+}

@@ -12,13 +12,13 @@ block content
                     label(for="autorization")
                         input#autorization(name="autorization" type="submit" value="Авторизация")
                 .index-section.animated
-                    .user.main_user.main_info 
+                    .user.main_user.main_info
                         include ../common/_user
                         include ../common/_socials
                         include ../common/menu
-                    .user.main_user.main_order.visuallyhidden
+                    .user.main_user.main_order.visuallyhidden 
                         .block__sub-title.order__title Авторизуйтесь
-                        form#order-form.order__form-tag(action='server.php', method='post')
+                        form#order-form.order__form-tag
                             .order__form
                                 .order__input
                                     .order__input-block
