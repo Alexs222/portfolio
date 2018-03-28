@@ -4,5 +4,91 @@ block variables
     - var title = 'Мои работы'
 
 block content
+    .wrapper
+        .maincontent
+            section.section.hero
+                .socials
+                    include ../common/_socials
+                .hamburger
+                    a.hamburger__link.hero__menu(href="#")
+                        .hamburger__bars
+                .hero__fon
+                    svg.hero__icon
+                        use(xlink:href="assets/images/icons/sprite.svg#portfolio_header")
+                .user.hero-user
+                     include ../common/_user
+                .arrow-down.hero__scroll-btn
+                    a.arrow__link(href="#")
+                        svg.arrow__icon
+                            use(xlink:href="assets/images/icons/sprite.svg#arrow_down")
+                .traingle
+                    svg.traingle-svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
+                        polygon.traingle-svg__left.traingle-svg__work-fill(points='0,0   0,86   500.8,86   500.8,75.5')
+                        polygon.traingle-svg__right.traingle-svg__work-fill(points='1000,0   1000,86   500,86   500,75.5')
+
+            section.section.slider
+                .slider__title
+                    .slider__title-wrap
+                        svg.svg-dash
+                            use(xlink:href="assets/images/icons/sprite.svg#dash")
+                        h1.title-main мои работы
+                        svg.svg-dash
+                            use(xlink:href="assets/images/icons/sprite.svg#dash")
+                        svg.slider__title-icon
+                            use(xlink:href="assets/images/icons/sprite.svg#works_header")
+                .slider__main
+                    .slider__comtainer
+                        .slider__go
+                            .slider__go-container
+                                ul.slider-go__list
+                                    li.slider-go__item
+                                        .slider-go__title
+                                            svg.svg-dash
+                                                use(xlink:href="assets/images/icons/sprite.svg#dash")
+                                            .title-sub-main сайт школы онлайн образования 
+                                            svg.svg-dash
+                                                use(xlink:href="assets/images/icons/sprite.svg#dash")
+                                        .slider-go__instruments html, css, javascript
+                                        .slider-go__butt
+                                            a.slider-go__link(href="#")
+                                                svg.svg-link(width="21px" height="21px")
+                                                    use(xlink:href="assets/images/icons/sprite.svg#link")
+                                                span.slider-go__link-text Посмотреть сайт
+                        //- .slider__demo
+                        .slider-demo__main
+                            img.slider-demo__img(src="assets/images/my-works/work-1.png", alt="work-1")
+
+                        .slider-demo__control
+                            .slider-demo__control-prev
+                                img.slider-demo__img(src="assets/images/my-works/work-2.png", alt="work-2")
+                                a.slider-demo__link(href="#")
+                                    svg.svg-slider-arrow(width="45px" height="30px")
+                                        use(xlink:href="assets/images/icons/sprite.svg#portf_arrow_down")
+
+                            .slider-demo__control-next
+                                img.slider-demo__img(src="assets/images/my-works/work-3.png", alt="work-3")
+                                a.slider-demo__link(href="#")
+                                    svg.svg-slider-arrow(width="45px" height="30px")
+                                        use(xlink:href="assets/images/icons/sprite.svg#portf_arrow_up")
+
+
+
+      
+
+
+
+
+                            
+
+                        
+                
+            section.section.sayings
+
+                    include ../common/_footer
+        include ../common/_fullscreenmenu
+
+
+
+
     h1 Мои работы
     include ../common/slider.pug

@@ -47,17 +47,26 @@
     text-align: right;
 }
 
+.blog-title__link {
+    display: block;
+}
+
 .blog-title__item {
     padding: 14px 20px 14px 0;
     &.active {
         border-right: 4px solid $green;
         transition: .3s;
-        color: $green;
+        .blog-title__link{
+            color: $green;
+        }
     }
-    // &:hover {
-    //     border-right: 4px solid $green;
-    //     transition: .3s;
-    // }
+    &:hover {
+        .blog-title__link {
+            color: $green;
+            transition: .3s;
+
+        }
+    }
 }
 
 
