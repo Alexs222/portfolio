@@ -11,8 +11,9 @@ html
         meta(content="ie=edge" http-equiv="x-ua-compatible")
         link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.9/css/all.css')
         link(rel='stylesheet' href='assets/styles/app.min.css')
-        //- script  (src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous" defer)
+        script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBeLTWUL0nvirEq_HgWep-97kPP5EXTRhM&callback=initMap')
         script(src='assets/scripts/bundle.js' defer)
+
     body
         block content
         //- include common/menu.pug

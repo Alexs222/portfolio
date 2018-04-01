@@ -1,10 +1,16 @@
-.footer-style {
-    background-color: $grey;
-    opacity: 0.85;
+.footer-container {
+    // display: flex;
+    // flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .footer__wrap {
     height: rem(150px);
+    background-color: $grey;
+    opacity: 0.85;
 }
 
 .footer__section {

@@ -105,7 +105,7 @@ block content
                                                                     .skill__title #{item[0]}
                 
             section.section.map
-                .google-map
+                #map.map-container
                 .map__contacts
                     .contacts
                         .contacts__title
@@ -132,7 +132,8 @@ block content
                                         use(xlink:href="assets/images/icons/sprite.svg#map_marker")
                                     span.contacts__text г.Калининград, ул. Пупкина, д. 100
 
-        include ../common/_footer
+        footer.footer-container
+            include ../common/_footer
         include ../common/_fullscreenmenu
 
         
