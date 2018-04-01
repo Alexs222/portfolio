@@ -14,15 +14,20 @@ body {
 .wrapper {
   overflow: hidden;
   min-height: 100%;
-  position: relative;
+  // position: relative;
+  display: flex;
+  flex-direction: column;
+
 }
 
-.footer-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
+// .footer-container {
+//   display: flex;
+//   flex-direction: column;
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+// }
 
 .section {
   min-height: 650px;

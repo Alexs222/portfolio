@@ -18,9 +18,7 @@ block content
                 .user.hero-user
                      include ../common/_user
                 .arrow-down.hero__scroll-btn
-                    a.arrow__link(href="#")
-                        svg.arrow__icon
-                            use(xlink:href="assets/images/icons/sprite.svg#arrow_down")
+                    include ../common/_arrow_down
                 .traingle
                     svg.traingle-svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
                         polygon.traingle-svg__left(points='0,0   0,86   500.8,86   500.8,75.5')
@@ -134,7 +132,7 @@ block content
                                         use(xlink:href="assets/images/icons/sprite.svg#map_marker")
                                     span.contacts__text г.Калининград, ул. Пупкина, д. 100
 
-                    include ../common/_footer
+        include ../common/_footer
         include ../common/_fullscreenmenu
 
         

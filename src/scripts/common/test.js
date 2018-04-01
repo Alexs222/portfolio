@@ -1,15 +1,11 @@
+
+
 const aktivization = () => {
     const buttonAutorization = document.getElementById('autorization'),
         panelInfo = document.querySelector('.main_info'),
         panelOrder = document.querySelector('.main_order'),
         buttonIndex = document.querySelector('.order__form-button_main'),
         section = document.querySelector('.index-section')
-
-        // console.log(buttonAutorization)
-        // console.log(panelInfo)
-        // console.log(panelOrder)
-        // console.log(buttonIndex)
-        // console.log(section)
 
 
     if (buttonAutorization !== null) {
