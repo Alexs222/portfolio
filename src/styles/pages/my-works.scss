@@ -130,6 +130,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover {
+        background: darken($green,6%);
+        transition: .4s;
+
+    }
 }
 
 .svg-link {
