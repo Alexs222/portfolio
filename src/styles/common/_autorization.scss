@@ -98,7 +98,6 @@
         position: absolute;
         width: 0;
         height: 0;
-        // border-radius: 50%;
         background: $green;
         top: 50%;
         left: 50%;
@@ -163,31 +162,9 @@
     transform: translate(-50%, -50%);
 }
 
-// .order__form-button {
-//     display: flex;
-//     justify-content: center;
-//     width: 100%;
-//     cursor: pointer;
-//     & :last-child {
-//         border-left: 1px solid $white;
-//     }
-//     &:hover {
-//         background: $dark-green;
-//     }
-// }
-
-// .order__form-button {
-//     height: 45px;
-//     border: none;
-//     background: $green;
-//     color: $white;
-//     transition: 0.3s;
-//     border-radius: 0 0 5px 0;
-// }
 
 .order__form-button {
     display: flex;
-    // justify-content: center;
     width: 100%;
     cursor: pointer;
     border-radius: 0 0 5px 5px;
@@ -208,5 +185,6 @@
     background: $green;
     color: $white;
     transition: 0.3s;
-    // border-radius: 0 0 5px 5px;
+    cursor: pointer;
+    
 }
