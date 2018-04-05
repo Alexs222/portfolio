@@ -1,12 +1,30 @@
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    @include tablets {
+
+    }
+
+    // align-items: center;
+    // justify-content: flex-start;
+}
+
 .skills-row__list {
     display: flex;
     flex-flow: row wrap;
+    @include tablets {
+        justify-content: center;
+    }
 }
 
 
 .skills-row__title {
     @include roboto('bold');
     font-size: rem(28px);
+    @include tablets {
+        text-align: center;
+    }
+
 }
 
 .skills-list__item{

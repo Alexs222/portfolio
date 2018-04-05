@@ -8,7 +8,7 @@
 }
 
 .footer__wrap {
-    height: rem(150px);
+    // height: rem(150px);
     background-color: $grey;
     opacity: 0.85;
 }
@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding: 20px 0;
 }
 
 .footer__top,
@@ -32,10 +32,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tablets {
+        width: 100%;
+        flex-direction: column;
+    }
+
 }
 
 .footer-menu {
     display: flex;
+    @include tablets {
+        margin-bottom: rem(10px);
+    }
 }
 
 .footer-menu__item {
@@ -56,10 +64,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tablets {
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
 }
 
 .footer-bot__left {
     width: rem(500px);
+    @include tablets {
+        width: 90%;
+        text-align: center;
+    }
 }
 .footer_text {
     color: #73787b;

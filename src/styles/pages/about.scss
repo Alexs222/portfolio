@@ -69,19 +69,62 @@
 .about {
     display: flex;
     height: 100%;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 // Левая часть
 
 .about__left {
     width: 50%;
-    display: flex;
     background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-bottom: rem(80px);
+    }
+
+
+}
+    
+
+.about__left-wrap {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    @include desktop {
+        flex-direction: column;
+        width: 80%;
+    }
+    @include tablets {
+        flex-direction: column;
+        width: 70%;
+    }
 }
 
 .about__left-title {
-    // display: flex;
+    @include desktop {
+        width: 100%;
+        margin-bottom: rem(60px);
+    }
+    @include tablets {
+        padding-top: 50px;
+    }
+
+}
+
+.about__left-content {
     width: 50%;
+    @include desktop {
+        width: 100%;
+    }
 }
 
 .block__title_about {
@@ -141,6 +184,22 @@
 .about__right {
     width: 50%;
     background-color: $beige;
+    padding-bottom: rem(60px);
+    
+    @include tablets {
+        width: 100%;
+        padding-bottom: rem(60px);
+    }
+}
+
+
+.about__right-wrap {
+    width: 90%;
+    margin: auto;
+    @include tablets {
+        width: 70%;
+    }
+
 }
 
 .title__right{
@@ -160,11 +219,13 @@
 .text-content_about-right {
     margin-bottom: rem(50px);
 }
-    
-.about__right-wrap {
-    width: 90%;
-    margin: auto;
-}
+
+// .about__right-content {
+//     @include tablets {
+//         text-align: center;
+//     }
+
+// }
 
 .map {
     position: relative;
