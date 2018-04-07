@@ -131,6 +131,12 @@
     margin: 0;
     text-align: center;
     line-height: 0.8;
+    @include tablets {
+        font-size: rem(49px);
+    }
+    @include phones {
+        font-size: rem(35px);
+    }
 }
 
 .about__wrap-title {
@@ -177,6 +183,14 @@
 
 .cont_sub-poz {
     margin-bottom: rem(18px);
+    @include tablets {
+        font-size: rem(30px);
+    }
+
+    @include phones {
+        font-size: rem(21px);
+    }
+
 }
 
 // Правая часть
@@ -208,6 +222,12 @@
     margin: 0;
     text-align: center;
     line-height: 0.8;
+    @include tablets {
+        font-size: rem(30px);
+    }
+    @include phones {
+        font-size: rem(21px);
+    }
 }
     
 
@@ -216,6 +236,13 @@
     font-size: rem(35px);
     text-align: center;
     margin-bottom: rem(30px);
+    @include tablets {
+        font-size: rem(30px);
+    }
+    @include phones {
+        font-size: rem(21px);
+    }
+
 }
 
 .text-content_about-right {
