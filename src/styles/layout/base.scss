@@ -6,10 +6,10 @@ body, html {
 body {
   font-size: 16px;
   @include tablets {
-    font-size: rem(15px);
+    font-size: rem(14px);
   }
   @include phones {
-    font-size: rem(13px);
+    font-size: rem(14px);
   }
   line-height: 1.42;
   color: $text-color;
@@ -143,6 +143,12 @@ button[type="button"] {
     margin: 0 rem(20px);
     line-height: 1.05;
     color: $grey;
+    @include tablets {
+      font-size: rem(49px);
+    }
+    @include phones {
+      font-size: rem(35px);
+    }
   }
 
   .title-sub-main {

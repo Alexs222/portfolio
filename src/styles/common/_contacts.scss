@@ -12,13 +12,15 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     width: rem(390px);
     height: rem(290px);
     background-color: #fcfcfc;
-    // background-color: lightblue;
     opacity: 0.85;
     border-radius: rem(8px);
+    @include phones {
+        top: 30%;
+    }
+
 }
 
  .contacts__title {

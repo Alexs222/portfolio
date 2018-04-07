@@ -39,18 +39,100 @@
 // main section
 
 .blog {
-    display: flex;
-    justify-content: space-around;
-    padding: 70px 5px 0 5px;
     height: 100%;
-    // margin-bottom: 150px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    position: relative;
+    margin-bottom: auto;
+    align-items: stretch;
 }
 
-
 .blog__left {
-    margin-right: 5px;
-    flex-basis: 310px;
+    position: absolute;
+    top: rem(40px);
+    right: 50%;
+    width: 25%;
+    transform: translate(-100%);
+    @include tablets {
+        display: none;
+    }
+}
+
+// .blog-swipe__menu {
+//     // display: flex;
+//     display: none;
+//     @include tablets {
+//         display: block;
+//         position: fixed;
+//         top: 50%;
+//         left: 0;
+//         // z-index: -1;
+//         transform: translate(-70%);
+//         width: rem(70px);
+//         height: rem(70px);
+//         background-color: $green;
+//         border-radius: 0 50% 50% 0;
+//         cursor: pointer;
+//         &.active {
+            
+//         }
+//     }
+// }
+
+.blog-swipe__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 0;
+    z-index: 140;
+    @include phones {
+        width: 90%;
+    }
+ 
+}
+
+.blog__swipe__btn {
+    background-color: $green;
+    width: rem(70px);
+    height: rem(70px);
+    border-radius: 0 50% 50% 0;
+    margin-left: -55px;
+
+}
+
+.blog-swipe__list {
+    height: 100%;
+    width: 0;
+    background-color: $green;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    &.active {
+        width: 100%;
+    }
+
+}
+
+.blog-swipe__item {
+    margin-right: rem(20px);
+    margin-bottom: rem(40px);
+    margin-left: rem(20px);
     text-align: right;
+    line-height: 2;
+    &_active .blog-swipe__link {
+        font-weight: bold;
+    }
+}
+
+.blog-swipe__link {
+    color: $white;
 }
 
 .blog-title__link {
@@ -59,6 +141,8 @@
 
 .blog-title__item {
     padding: 14px 20px 14px 0;
+    text-align: right;
+
     &.active {
         border-right: 4px solid $green;
         transition: .3s;
@@ -78,18 +162,31 @@
 
 
 .blog__right {
-    flex-basis: 680px;
+    // flex-basis: 680px;
+    width: 68%;
+    padding: 1% 1% 2%;
+    margin: 0 1.9% 0 auto;
+    @include tablets {
+        width: 95%;
+    }
+
 }
 
 .block__sub-title_blog {
-      @include bernier;
-      font-size: rem(35px);
-      color: $text-color;
-  }
+    @include bernier;
+        font-size: rem(35px);
+        color: $text-color;
+    @include tablets {
+        font-size: rem(30px);
+    }
+}
 
 
 .blog-article__item{
     margin-bottom: rem(60px);
+    &:first-child {
+        padding-top: rem(20px);
+    }
 }
 
 

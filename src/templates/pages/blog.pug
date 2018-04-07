@@ -33,6 +33,7 @@ block content
                         polygon.traingle-svg__left.traingle-svg__blog(points='0,0   0,86   500.8,86   500.8,75.5')
                         polygon.traingle-svg__right.traingle-svg__blog(points='1000,0   1000,86   500,86   500,75.5')
             section.section.blog
+                
                 sidebar.blog__left
                     ul.blog__title
                         li.blog-title__item.active(data-scroll-to="sass")
@@ -44,9 +45,8 @@ block content
                         li.blog-title__item(data-scroll-to="pug")
                             a.blog-title__link(href="#") Почему я выбрав Jade
 
-                .blog__right
-                    .blog__right-wrap
-                        ul.blog__article
+                main.blog__right
+                    ul.blog__article
                             li.blog-article__item
                                 .blog-article__main
                                     .blog-article__title 
@@ -195,6 +195,18 @@ block content
         footer
             include ../common/_footer
         include ../common/_fullscreenmenu
+        .blog-swipe__menu
+                    ul.blog-swipe__list
+                        li.blog-swipe__item.blog-swipe__item_active(data-scroll-to="sass")
+                            a.blog-swipe__link(href="#") Самое важное в SASS
+                        li.blog-swipe__item(data-scroll-to="layout")
+                            a.blog-swipe__link(href="#") Приемы в верстке без которых не обходится ни один сайт
+                        li.blog-swipe__item(data-scroll-to="gulp")
+                            a.blog-swipe__link(href="#") Самый необходимый набор Gulp плагинов
+                        li.blog-swipe__item(data-scroll-to="pug")
+                            a.blog-swipe__link(href="#") Почему я выбрав Jade
+                    a.blog__swipe__btn(href="#")
+
 
 
 
